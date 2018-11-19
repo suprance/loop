@@ -1,0 +1,86 @@
+// PAGE LOADER
+.loader-overlay {
+  background: rgba(255, 255, 255, 0.98);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  .loader{
+    bottom: 0;
+    left: 30px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    .loader-img{
+      bottom: 0;
+      color: rgba(0, 0, 0, 0.7);
+      display: block;
+      height: 100%;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 100%;
+      span{
+        display: block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .cm{
+    margin: 0 -2px;
+  }
+}
+
+// BACK TO TOP
+.back-to-top{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 9;
+  background-color: #fff;
+  a{
+    color: $color-text;
+    font-size: 12px;
+    padding: 7px 10px 5px;
+    height: 32px;
+    width: 134px;
+    font-family: $font-ns-semibold;
+    background-color: #fff;
+    border: 1px solid #979797;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px 0 rgba(77, 72, 67, 0.5);
+    @include transition();
+    text-align: center;
+    &:active,
+    &:visited{
+      background-color: #fff;
+    }
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.2)
+    }
+    &:focus,
+    &:focus-within{
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+    i{
+      padding-right: 8px;
+    }
+  }
+}
+
+// VERTICAL ALIGN BUG
+.cm{
+  @include oInline(middle);
+  width: 99.99%;
+  &.sh{
+    width: 0.01%;
+    height: 100%;
+  }
+}
+
+@import "assets/css-loader-dual-ring";
