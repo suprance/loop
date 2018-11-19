@@ -1,0 +1,18 @@
+// Variables and mixins
+// ----------------------------------------------------
+@import "variables";
+@import "mixins";
+
+// Feel free to include other partials here e.g. (partials are named with _ prefix)
+// ----------------------------------------------------
+@import 'print';
+
+@media screen{
+  @import 'typography';
+  // @import 'nav';
+  @import 'assets';
+  // @import 'page-layout';
+}
+
+// Codes Here for Overrides
+// ----------------------------------------------------

@@ -1,0 +1,76 @@
+/*** INSTRUCTION: HOW TO ADD CUSTOM FONTS ***/
+// @import 'fonts-list/font-opensans';
+// @import 'fonts-list/font-andalemono';
+// @import 'fonts-list/font-notosansmono';
+// @import 'fonts-list/font-notosans';
+// @import 'fonts-list/font-icomoon';
+
+// // FONTS
+$font-main-regular: 'open_sansregular';
+$font-main-bold: 'open_sansbold';
+$font-main-semibold: 'open_sanssemibold';
+$font-main-light: 'open_sanslight';
+$font-main-italic: 'open_sansitalic';
+
+$font-andale: "AndaleMono";
+
+$font-nsm-thin: 'noto_sans_monothin';
+$font-nsm-xlight: 'noto_sans_monoextralight';
+$font-nsm-light: 'noto_sans_monolight';
+$font-nsm: 'noto_sans_monoregular';
+$font-nsm-medium: 'noto_sans_monomedium';
+$font-nsm-sbold: 'noto_sans_monosemibold';
+$font-nsm-bold: 'noto_sans_monobold';
+$font-nsm-xbold: 'noto_sans_monoextrabold';
+$font-nsm-black: 'noto_sans_monoblack';
+
+$font-ns-black: 'noto_sansblack';
+$font-ns-bold: 'noto_sansbold';
+$font-ns-xbold: 'noto_sansextrabold';
+$font-ns-xlight: 'noto_sansextralight';
+$font-ns-italic: 'noto_sansitalic';
+$font-ns-light: 'noto_sanslight';
+$font-ns-medium: 'noto_sansmedium';
+$font-ns: 'noto_sansregular';
+$font-ns-thin: 'noto_sansthin';
+$font-ns-semibold: 'noto_sanssemibold';
+
+
+// // COLORS - DEFAULT
+$color-default: #f6f6f6;
+$color-theme: #1cad7e;
+$color-text: #4d4843;
+$color-link-hover: #4a90e2;
+$color-error: #d0021b;
+
+// // COLORS
+$color-main-1: #ccc;
+$color-main-2: #ddd;
+
+// NAVIGATION MENU - MOBILE
+$nav-parent-li: #ccc;
+$nav-level1-li: #ddd;
+$nav-level2-li: #eee;
+$nav-level3-li: #aaa;
+
+// SOCIAL MEDIA COLORS
+$social-twitter: #00aced;
+$social-facebook: #3b5998;
+$social-googleplus: #dd4b39;
+$social-pinterest: #cb2027;
+$social-linkedin: #007bb6;
+$social-youtube: #bb0000;
+$social-vimeo: #aad450;
+$social-tumblr: #32506d;
+$social-instagram: #517fa4;
+$social-flickr: #ff0084;
+$social-dribbble: #ea4c89;
+$social-quora: #a82400;
+$social-foursquare: #0072b1;
+$social-forrst: #5B9A68;
+$social-vk: #45668e;
+$social-wordpress: #21759b;
+$social-stumbleupon: #EB4823;
+$social-yahoo: #7B0099;
+$social-blogger: #fb8f3d;
+$social-soundcloud: #ff3a00;

@@ -1,0 +1,70 @@
+[19-Nov-2018 15:33:59 UTC] PHP Warning:  require_once(/var/www/wordpress/wp-content/themes/mesmerize/class-tgm-plugin-activation.php): failed to open stream: No such file or directory in /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php on line 406
+[19-Nov-2018 15:33:59 UTC] PHP Stack trace:
+[19-Nov-2018 15:33:59 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Nov-2018 15:33:59 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Nov-2018 15:33:59 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:13
+[19-Nov-2018 15:33:59 UTC] PHP   4. require_once() /var/www/wordpress/wp-load.php:37
+[19-Nov-2018 15:33:59 UTC] PHP   5. require_once() /var/www/wordpress/wp-config.php:77
+[19-Nov-2018 15:33:59 UTC] PHP   6. do_action() /var/www/wordpress/wp-settings.php:434
+[19-Nov-2018 15:33:59 UTC] PHP   7. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[19-Nov-2018 15:33:59 UTC] PHP   8. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[19-Nov-2018 15:33:59 UTC] PHP   9. mesmerize_setup() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[19-Nov-2018 15:33:59 UTC] PHP  10. mesmerize_suggest_plugins() /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php:384
+[19-Nov-2018 15:33:59 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/wordpress/wp-content/themes/mesmerize/class-tgm-plugin-activation.php' (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php on line 406
+[19-Nov-2018 15:33:59 UTC] PHP Stack trace:
+[19-Nov-2018 15:33:59 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Nov-2018 15:33:59 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Nov-2018 15:33:59 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:13
+[19-Nov-2018 15:33:59 UTC] PHP   4. require_once() /var/www/wordpress/wp-load.php:37
+[19-Nov-2018 15:33:59 UTC] PHP   5. require_once() /var/www/wordpress/wp-config.php:77
+[19-Nov-2018 15:33:59 UTC] PHP   6. do_action() /var/www/wordpress/wp-settings.php:434
+[19-Nov-2018 15:33:59 UTC] PHP   7. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[19-Nov-2018 15:33:59 UTC] PHP   8. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[19-Nov-2018 15:33:59 UTC] PHP   9. mesmerize_setup() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[19-Nov-2018 15:33:59 UTC] PHP  10. mesmerize_suggest_plugins() /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php:384
+[19-Nov-2018 15:34:44 UTC] PHP Warning:  require_once(/var/www/wordpress/wp-content/themes/mesmerize/class-tgm-plugin-activation.php): failed to open stream: No such file or directory in /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php on line 406
+[19-Nov-2018 15:34:44 UTC] PHP Stack trace:
+[19-Nov-2018 15:34:44 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin-ajax.php:0
+[19-Nov-2018 15:34:44 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin-ajax.php:22
+[19-Nov-2018 15:34:44 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[19-Nov-2018 15:34:44 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[19-Nov-2018 15:34:44 UTC] PHP   5. do_action() /var/www/wordpress/wp-settings.php:434
+[19-Nov-2018 15:34:44 UTC] PHP   6. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[19-Nov-2018 15:34:44 UTC] PHP   7. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[19-Nov-2018 15:34:44 UTC] PHP   8. mesmerize_setup() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[19-Nov-2018 15:34:44 UTC] PHP   9. mesmerize_suggest_plugins() /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php:384
+[19-Nov-2018 15:34:44 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/wordpress/wp-content/themes/mesmerize/class-tgm-plugin-activation.php' (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php on line 406
+[19-Nov-2018 15:34:44 UTC] PHP Stack trace:
+[19-Nov-2018 15:34:44 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin-ajax.php:0
+[19-Nov-2018 15:34:44 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin-ajax.php:22
+[19-Nov-2018 15:34:44 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[19-Nov-2018 15:34:44 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[19-Nov-2018 15:34:44 UTC] PHP   5. do_action() /var/www/wordpress/wp-settings.php:434
+[19-Nov-2018 15:34:44 UTC] PHP   6. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[19-Nov-2018 15:34:44 UTC] PHP   7. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[19-Nov-2018 15:34:44 UTC] PHP   8. mesmerize_setup() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[19-Nov-2018 15:34:44 UTC] PHP   9. mesmerize_suggest_plugins() /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php:384
+[19-Nov-2018 15:34:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mesmerize_suggest_plugins() in /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php:384
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(286): mesmerize_setup('')
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/wordpress/wp-settings.php(434): do_action('after_setup_the...')
+#4 /var/www/wordpress/wp-config.php(77): require_once('/var/www/wordpr...')
+#5 /var/www/wordpress/wp-load.php(37): require_once('/var/www/wordpr...')
+#6 /var/www/wordpress/wp-blog-header.php(13): require_once('/var/www/wordpr...')
+#7 /var/www/wordpress/index.php(17): require('/var/www/wordpr...')
+#8 {main}
+  thrown in /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php on line 384
+[19-Nov-2018 15:35:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mesmerize_suggest_plugins() in /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php:384
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(286): mesmerize_setup('')
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/wordpress/wp-settings.php(434): do_action('after_setup_the...')
+#4 /var/www/wordpress/wp-config.php(77): require_once('/var/www/wordpr...')
+#5 /var/www/wordpress/wp-load.php(37): require_once('/var/www/wordpr...')
+#6 /var/www/wordpress/wp-admin/admin.php(31): require_once('/var/www/wordpr...')
+#7 /var/www/wordpress/wp-admin/theme-install.php(10): require_once('/var/www/wordpr...')
+#8 {main}
+  thrown in /var/www/wordpress/wp-content/themes/mesmerize/inc/functions.php on line 384
