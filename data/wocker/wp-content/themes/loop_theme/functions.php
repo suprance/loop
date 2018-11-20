@@ -132,24 +132,24 @@ add_action( 'widgets_init', 'loop_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function loop_theme_scripts_styles() {
-  // wp_deregister_script( 'jquery' );
+  wp_deregister_script( 'jquery' );
   
   // list here all the css
   wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css');
   wp_enqueue_style('fontawesome', get_template_directory_uri() . '/assets/css/fontawesome-all.css');
 
-  wp_enqueue_style('aos-css', get_template_directory_uri() . '/assets/vendor/aos.css');
-  wp_enqueue_style('animate-css', get_template_directory_uri() . '/assets/vendor/animate.css');
-  wp_enqueue_style('hover-css', get_template_directory_uri() . '/assets/vendor/hover.css');
+  wp_enqueue_style('aos-css', get_template_directory_uri() . '/assets/css/vendor/aos.css');
+  wp_enqueue_style('animate-css', get_template_directory_uri() . '/assets/css/vendor/animate.css');
+  wp_enqueue_style('hover-css', get_template_directory_uri() . '/assets/css/vendor/hover.css');
 
   // always make this style css on bottom
   wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', array() );
   wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.css', array() );
 
   // list here all the js
-  wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array('jquery'), true );
+  wp_enqueue_script( 'page5ph-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array('jquery'), false );
   wp_enqueue_script('bootstrap-bundle', get_template_directory_uri() . '/assets/vendor/bootstrap.bundle.min.js', array('jquery'), '4', true);
-  wp_enqueue_script('bootstrap-popper', get_template_directory_uri() . '/assets/vendor/popper.js', array('jquery'), '4', true);
+  wp_enqueue_script('bootstrap-popper', get_template_directory_uri() . '/assets/vendor/popper.min.js', array('jquery'), '4', true);
   wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/vendor/bootstrap.min.js', array('jquery'), '4', true);
 
   // Enqueue Animate on Scroll https://michalsnik.github.io/aos/
@@ -157,7 +157,7 @@ function loop_theme_scripts_styles() {
 
 
   // always make this main JS on bottom
-  wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1', true);
+  wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array('jquery'), '1', true);
 
 
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

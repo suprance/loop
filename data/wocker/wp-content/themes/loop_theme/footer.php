@@ -29,8 +29,6 @@
     </div>
   </div>
 
-  putang ina
-
 <?php wp_footer(); ?>
 
 </body>

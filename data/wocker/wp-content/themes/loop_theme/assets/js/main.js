@@ -1,19 +1,19 @@
-jQuery(document).ready(function($){
+$(document).ready(function(){
   $(window).load(function(){
     // VARIABLES
     var $pageHeight = $(window).height(),
-    $pageWidth = $(window).width();
+    $pageWidth = $(window).width(),
 
     // INITIATIONS
     AOS.init({ once: true });
 
-    $('.loader-overlay').fadeOut(500);
+    $('.loader-overlay').fadeOut(200);
   });
 
   $(window).on('resize', function(){
     // VARIABLES
     var $pageHeight = $(window).height(),
-    $pageWidth = $(window).width();
+    $pageWidth = $(window).width(),
   });
 
   $(window).on('scroll', function(){
