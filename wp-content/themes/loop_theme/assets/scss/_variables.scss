@@ -1,9 +1,10 @@
 /*** INSTRUCTION: HOW TO ADD CUSTOM FONTS ***/
-// @import 'fonts-list/font-opensans';
-// @import 'fonts-list/font-andalemono';
-// @import 'fonts-list/font-notosansmono';
-// @import 'fonts-list/font-notosans';
-// @import 'fonts-list/font-icomoon';
+// @import 'font-list/font-opensans';
+// @import 'font-list/font-andalemono';
+// @import 'font-list/font-notosansmono';
+// @import 'font-list/font-notosans';
+// @import 'font-list/font-icomoon';
+@import 'font-list/font-montserrat';
 
 // // FONTS
 $font-main-regular: 'open_sansregular';
@@ -13,6 +14,15 @@ $font-main-light: 'open_sanslight';
 $font-main-italic: 'open_sansitalic';
 
 $font-andale: "AndaleMono";
+
+$font-mont-light: 'Montserrat Light';
+$font-mont-light-i: 'Montserrat Light Italic';
+$font-mont: 'Montserrat Regular';
+$font-mont-i: 'Montserrat Regular Italic';
+$font-mont-sb: 'Montserrat Semibold';
+$font-mont-sbi: 'Montserrat Semibold Italic';
+$font-mont-b: 'Montserrat Bold';
+$font-mont-bi: 'Montserrat Bold Italic';
 
 $font-nsm-thin: 'noto_sans_monothin';
 $font-nsm-xlight: 'noto_sans_monoextralight';

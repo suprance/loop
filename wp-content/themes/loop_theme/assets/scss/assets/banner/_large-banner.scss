@@ -1,0 +1,21 @@
+.main-banner{
+  .banner-large{
+    .banner-image{
+      height: 312px;
+      @media (min-width: 768px){
+        height: 432px;
+      }
+      @media (min-width: 1200px){
+        height: 695px;
+      }
+    }
+    .banner-content{
+      @media (min-width: 768px){
+        height: 432px;
+      }
+      @media (min-width: 1200px){
+        height: 695px;
+      }
+    }
+  }
+}

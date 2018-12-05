@@ -1,0 +1,48 @@
+.main-testimonials{
+  background-color: #000;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: linear-gradient(141deg, #000000 0%, #000000 20%, #4A340F 80%, #543D13 125%);
+  .content-holder{
+    text-align: center;
+    margin-bottom: 80px;
+    .title-holder{
+      font-family: $font-mont-b;
+      color: #D59638;
+      margin-bottom: 20px;
+    }
+    .star-holder{
+      color: #FDFDFD;
+    }
+  }
+  .box-holder{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    .box-item{
+      position: relative;
+      .image-holder{
+        position: absolute;
+        top: -55px;
+        left: 0px;
+        .image-item{
+          height: 90px;
+          width: 90px;
+          @include backgroundDefault(contain);
+        }
+      }
+      .content-title-holder{
+        margin-left: 105px;
+        margin-bottom: 15px;
+        h5{
+          font-family: $font-mont-b;
+          color: #CF9737;
+        }
+        h6{
+          margin-top: 5px;
+          font-family: $font-mont-b;
+        }
+      }
+    }
+  }
+}

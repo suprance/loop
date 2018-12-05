@@ -19,6 +19,13 @@
  */
   add_filter('gutenberg_can_edit_post_type', '__return_false');
 
+/**
+ * shortcut img folder
+ */
+function imgfolder($name){
+  return get_stylesheet_directory_uri().'/assets/images/'.$name;
+}
+
 if ( ! function_exists( 'loop_theme_setup' ) ) :
   /**
    * Sets up theme defaults and registers support for various WordPress features.
@@ -141,28 +148,38 @@ function loop_theme_scripts_styles() {
   wp_enqueue_style('aos-css', get_template_directory_uri() . '/assets/vendor/aos.css');
   wp_enqueue_style('animate-css', get_template_directory_uri() . '/assets/vendor/animate.css');
   wp_enqueue_style('hover-css', get_template_directory_uri() . '/assets/vendor/hover.css');
+  wp_enqueue_style('slick-css', get_template_directory_uri() . '/assets/vendor/slick/slick-theme.css');
+  wp_enqueue_style('slick-theme-css', get_template_directory_uri() . '/assets/vendor/slick/slick.css');
 
   // always make this style css on bottom
   wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', array() );
   wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.css', array() );
 
   // list here all the js
-  wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array('jquery'), true );
-  wp_enqueue_script('bootstrap-bundle', get_template_directory_uri() . '/assets/vendor/bootstrap.bundle.min.js', array('jquery'), '4', true);
+  wp_enqueue_script('jquery-min', get_template_directory_uri() . '/assets/js/jquery.min.js', array('jquery'), false);
+  // wp_enqueue_script('bootstrap-bundle', get_template_directory_uri() . '/assets/vendor/bootstrap.bundle.min.js', array('jquery'), '4', true);
   wp_enqueue_script('bootstrap-popper', get_template_directory_uri() . '/assets/vendor/popper.js', array('jquery'), '4', true);
   wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/vendor/bootstrap.min.js', array('jquery'), '4', true);
+  wp_enqueue_script('slick-js', get_template_directory_uri() . '/assets/vendor/slick/slick.min.js', array('jquery'), '4', true);
 
   // Enqueue Animate on Scroll https://michalsnik.github.io/aos/
   wp_enqueue_script('aos-js', get_template_directory_uri() . '/assets/vendor/aos.js', array('jquery'), '1', true);
 
+  // Enqueue Amchart
+  wp_enqueue_script('amchart-core', get_template_directory_uri() . '/assets/js/core.js', array('jquery'), '1', true);
+  wp_enqueue_script('amchart-charts', get_template_directory_uri() . '/assets/js/charts.js', array('jquery'), '1', true);
+  wp_enqueue_script('amchart-material', get_template_directory_uri() . '/assets/js/material.js', array('jquery'), '1', true);
+  wp_enqueue_script('amchart-animated', get_template_directory_uri() . '/assets/js/animated.js', array('jquery'), '1', true);
+  //display chart infos
+  wp_enqueue_script('amchart-data', get_template_directory_uri() . '/assets/js/amchart-candle-stick.js', array('jquery'), '1', true);
 
   // always make this main JS on bottom
-  wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1', true);
+  wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1', false);
 
 
-  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-    wp_enqueue_script( 'comment-reply' );
-  }
+  // if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+  //   wp_enqueue_script( 'comment-reply' );
+  // }
 }
 add_action( 'wp_enqueue_scripts', 'loop_theme_scripts_styles' );
 
@@ -189,7 +206,6 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
-  require get_template_directory() . '/inc/jetpack.php';
-}
-
+// if ( defined( 'JETPACK__VERSION' ) ) {
+//   require get_template_directory() . '/inc/jetpack.php';
+// }

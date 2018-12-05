@@ -1,0 +1,73 @@
+.page-about-us{
+  .content-holder{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .title-holder{
+      h2{
+        text-align: center;
+        font-family: $font-mont-b;
+        color: #d59638;
+        margin-bottom: 12px;
+      }
+    }
+    .description-holder{
+      img.alignright { float: right; margin: 0 0 1em 1em; }
+      img.alignleft { float: left; margin: 0 1em 1em 0; }
+      img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+      .alignright { float: right; }
+      .alignleft { float: left; }
+      .aligncenter { display: block; margin-left: auto; margin-right: auto; }
+      text-align: justify;
+    }
+  }
+  .staff-container{
+    @include flexDisplay();
+    .staff-holder{
+      @include flexWidth(25%);
+      position: relative;
+      .staff-image{
+        @include backgroundDefault();
+        height: 355px;
+        filter: gray;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        &.colored{
+          background-color: #212121;
+        }
+      }
+      .staff-content{
+        padding: 20px 0;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-family: $font-mont-sb;
+        -webkit-box-shadow: inset 0px -60px 70px -15px #000;
+        -moz-box-shadow: inset 0px -60px 70px -15px #000;
+        box-shadow: inset 0px -60px 70px -15px #000;
+        .name{
+          font-size: 16px;
+          color: #fff;
+        }
+        .position{
+          font-size: 12px;
+          color: #8D8D8D;
+        }
+        &.description{
+          box-shadow: none;
+          padding-top: 50px;
+          top: 0;
+          .title{
+            font-family: $font-mont-b;
+            font-size: 16px;
+            color: #fff;
+          }
+          .caption{
+            font-size: 12px;
+            color: #9B9B9B;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4196,3 +4196,501 @@ Stack trace:
 [20-Nov-2018 13:50:39 UTC] PHP 254. WP_Dependencies->recurse_deps() /var/www/wordpress/wp-includes/class.wp-dependencies.php:330
 [20-Nov-2018 13:50:39 UTC] PHP 255. WP_Dependencies->recurse_deps() /var/www/wordpress/wp-includes/class.wp-dependencies.php:330
 [20-Nov-2018 13:50:39 UTC] PHP 256. WP_Dependencies->recurse_deps() /var/www/wordpress/wp-includes/class.wp-dependencies.php:330
+[20-Nov-2018 22:49:44 UTC] PHP Notice:  Undefined variable: footerLogo in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php on line 24
+[20-Nov-2018 22:49:44 UTC] PHP Stack trace:
+[20-Nov-2018 22:49:44 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[20-Nov-2018 22:49:44 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[20-Nov-2018 22:49:44 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[20-Nov-2018 22:49:44 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[20-Nov-2018 22:49:44 UTC] PHP   5. get_footer() /var/www/wordpress/wp-content/themes/loop_theme/index.php:59
+[20-Nov-2018 22:49:44 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:76
+[20-Nov-2018 22:49:44 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[20-Nov-2018 22:49:44 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[20-Nov-2018 22:49:44 UTC] PHP   9. include() /var/www/wordpress/wp-content/themes/loop_theme/footer.php:2
+[20-Nov-2018 22:49:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php:28
+Stack trace:
+#0 /var/www/wordpress/wp-content/themes/loop_theme/footer.php(2): include()
+#1 /var/www/wordpress/wp-includes/template.php(688): require_once('/var/www/wordpr...')
+#2 /var/www/wordpress/wp-includes/template.php(647): load_template('/var/www/wordpr...', true)
+#3 /var/www/wordpress/wp-includes/general-template.php(76): locate_template(Array, true)
+#4 /var/www/wordpress/wp-content/themes/loop_theme/index.php(59): get_footer()
+#5 /var/www/wordpress/wp-includes/template-loader.php(74): include('/var/www/wordpr...')
+#6 /var/www/wordpress/wp-blog-header.php(19): require_once('/var/www/wordpr...')
+#7 /var/www/wordpress/index.php(17): require('/var/www/wordpr...')
+#8 {main}
+  thrown in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php on line 28
+[20-Nov-2018 22:51:38 UTC] PHP Notice:  Undefined variable: footerLogo in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php on line 24
+[20-Nov-2018 22:51:38 UTC] PHP Stack trace:
+[20-Nov-2018 22:51:38 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[20-Nov-2018 22:51:38 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[20-Nov-2018 22:51:38 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[20-Nov-2018 22:51:38 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[20-Nov-2018 22:51:38 UTC] PHP   5. get_footer() /var/www/wordpress/wp-content/themes/loop_theme/index.php:59
+[20-Nov-2018 22:51:38 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:76
+[20-Nov-2018 22:51:38 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[20-Nov-2018 22:51:38 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[20-Nov-2018 22:51:38 UTC] PHP   9. include() /var/www/wordpress/wp-content/themes/loop_theme/footer.php:2
+[20-Nov-2018 22:51:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php:32
+Stack trace:
+#0 /var/www/wordpress/wp-content/themes/loop_theme/footer.php(2): include()
+#1 /var/www/wordpress/wp-includes/template.php(688): require_once('/var/www/wordpr...')
+#2 /var/www/wordpress/wp-includes/template.php(647): load_template('/var/www/wordpr...', true)
+#3 /var/www/wordpress/wp-includes/general-template.php(76): locate_template(Array, true)
+#4 /var/www/wordpress/wp-content/themes/loop_theme/index.php(59): get_footer()
+#5 /var/www/wordpress/wp-includes/template-loader.php(74): include('/var/www/wordpr...')
+#6 /var/www/wordpress/wp-blog-header.php(19): require_once('/var/www/wordpr...')
+#7 /var/www/wordpress/index.php(17): require('/var/www/wordpr...')
+#8 {main}
+  thrown in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php on line 32
+[20-Nov-2018 22:51:42 UTC] PHP Notice:  Undefined variable: footerLogo in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php on line 24
+[20-Nov-2018 22:51:42 UTC] PHP Stack trace:
+[20-Nov-2018 22:51:42 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[20-Nov-2018 22:51:42 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[20-Nov-2018 22:51:42 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[20-Nov-2018 22:51:42 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[20-Nov-2018 22:51:42 UTC] PHP   5. get_footer() /var/www/wordpress/wp-content/themes/loop_theme/index.php:59
+[20-Nov-2018 22:51:42 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:76
+[20-Nov-2018 22:51:42 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[20-Nov-2018 22:51:42 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[20-Nov-2018 22:51:42 UTC] PHP   9. include() /var/www/wordpress/wp-content/themes/loop_theme/footer.php:2
+[20-Nov-2018 22:51:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php:32
+Stack trace:
+#0 /var/www/wordpress/wp-content/themes/loop_theme/footer.php(2): include()
+#1 /var/www/wordpress/wp-includes/template.php(688): require_once('/var/www/wordpr...')
+#2 /var/www/wordpress/wp-includes/template.php(647): load_template('/var/www/wordpr...', true)
+#3 /var/www/wordpress/wp-includes/general-template.php(76): locate_template(Array, true)
+#4 /var/www/wordpress/wp-content/themes/loop_theme/index.php(59): get_footer()
+#5 /var/www/wordpress/wp-includes/template-loader.php(74): include('/var/www/wordpr...')
+#6 /var/www/wordpress/wp-blog-header.php(19): require_once('/var/www/wordpr...')
+#7 /var/www/wordpress/index.php(17): require('/var/www/wordpr...')
+#8 {main}
+  thrown in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/footer/footer-content.php on line 32
+[21-Nov-2018 15:14:40 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /var/www/wordpress/wp-content/themes/loop_theme/index.php on line 31
+[22-Nov-2018 03:17:39 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 155
+[22-Nov-2018 03:17:39 UTC] PHP Stack trace:
+[22-Nov-2018 03:17:39 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[22-Nov-2018 03:17:39 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[22-Nov-2018 03:17:39 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[22-Nov-2018 03:17:39 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[22-Nov-2018 03:17:39 UTC] PHP   5. wp_version_check() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[22-Nov-2018 03:17:39 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:155
+[22-Nov-2018 03:17:39 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 347
+[22-Nov-2018 03:17:39 UTC] PHP Stack trace:
+[22-Nov-2018 03:17:39 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[22-Nov-2018 03:17:39 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[22-Nov-2018 03:17:39 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[22-Nov-2018 03:17:39 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[22-Nov-2018 03:17:39 UTC] PHP   5. wp_update_plugins() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[22-Nov-2018 03:17:39 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:347
+[22-Nov-2018 03:17:39 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 529
+[22-Nov-2018 03:17:39 UTC] PHP Stack trace:
+[22-Nov-2018 03:17:39 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[22-Nov-2018 03:17:39 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[22-Nov-2018 03:17:39 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[22-Nov-2018 03:17:39 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[22-Nov-2018 03:17:39 UTC] PHP   5. wp_update_themes() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[22-Nov-2018 03:17:39 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:529
+[26-Nov-2018 13:16:25 UTC] PHP Notice:  Undefined index: borderColor in /var/www/wordpress/wp-content/plugins/wp-tradingview/inc/admin_page.php on line 544
+[26-Nov-2018 13:16:25 UTC] PHP Stack trace:
+[26-Nov-2018 13:16:25 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:16:25 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/plugins.php:10
+[26-Nov-2018 13:16:25 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[26-Nov-2018 13:16:25 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:16:25 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:16:25 UTC] PHP   6. tv_settings_init() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:16:25 UTC] PHP Notice:  Undefined index: autosize in /var/www/wordpress/wp-content/plugins/wp-tradingview/inc/admin_page.php on line 706
+[26-Nov-2018 13:16:25 UTC] PHP Stack trace:
+[26-Nov-2018 13:16:25 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:16:25 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/plugins.php:10
+[26-Nov-2018 13:16:25 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[26-Nov-2018 13:16:25 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:16:25 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:16:25 UTC] PHP   6. tv_settings_init() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:16:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/wordpress/wp-content/plugins/wp-tradingview/inc/admin_page.php:706) in /var/www/wordpress/wp-admin/includes/misc.php on line 1126
+[26-Nov-2018 13:16:25 UTC] PHP Stack trace:
+[26-Nov-2018 13:16:25 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:16:25 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/plugins.php:10
+[26-Nov-2018 13:16:25 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[26-Nov-2018 13:16:25 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:16:25 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:16:25 UTC] PHP   6. wp_admin_headers() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:16:25 UTC] PHP   7. header() /var/www/wordpress/wp-admin/includes/misc.php:1126
+[26-Nov-2018 13:16:40 UTC] PHP Notice:  Undefined index: borderColor in /var/www/wordpress/wp-content/plugins/wp-tradingview/inc/admin_page.php on line 544
+[26-Nov-2018 13:16:40 UTC] PHP Stack trace:
+[26-Nov-2018 13:16:40 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:16:40 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/plugins.php:10
+[26-Nov-2018 13:16:40 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[26-Nov-2018 13:16:40 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:16:40 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:16:40 UTC] PHP   6. tv_settings_init() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:16:40 UTC] PHP Notice:  Undefined index: autosize in /var/www/wordpress/wp-content/plugins/wp-tradingview/inc/admin_page.php on line 706
+[26-Nov-2018 13:16:40 UTC] PHP Stack trace:
+[26-Nov-2018 13:16:40 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:16:40 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/plugins.php:10
+[26-Nov-2018 13:16:40 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[26-Nov-2018 13:16:40 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:16:40 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:16:40 UTC] PHP   6. tv_settings_init() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:16:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/wordpress/wp-content/plugins/wp-tradingview/inc/admin_page.php:706) in /var/www/wordpress/wp-admin/includes/misc.php on line 1126
+[26-Nov-2018 13:16:40 UTC] PHP Stack trace:
+[26-Nov-2018 13:16:40 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:16:40 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/plugins.php:10
+[26-Nov-2018 13:16:40 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[26-Nov-2018 13:16:40 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:16:40 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:16:40 UTC] PHP   6. wp_admin_headers() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:16:40 UTC] PHP   7. header() /var/www/wordpress/wp-admin/includes/misc.php:1126
+[26-Nov-2018 13:16:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/wordpress/wp-content/plugins/wp-tradingview/inc/admin_page.php:706) in /var/www/wordpress/wp-includes/pluggable.php on line 1219
+[26-Nov-2018 13:16:40 UTC] PHP Stack trace:
+[26-Nov-2018 13:16:40 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:16:40 UTC] PHP   2. wp_redirect() /var/www/wordpress/wp-admin/plugins.php:250
+[26-Nov-2018 13:16:40 UTC] PHP   3. header() /var/www/wordpress/wp-includes/pluggable.php:1219
+[26-Nov-2018 13:17:39 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/wordpress/wp-includes/functions.php on line 3856
+[26-Nov-2018 13:17:39 UTC] PHP Stack trace:
+[26-Nov-2018 13:17:39 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:17:39 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:17:39 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:17:39 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:17:39 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:17:39 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:17:39 UTC] PHP   7. screen_icon() /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php:173
+[26-Nov-2018 13:17:39 UTC] PHP   8. _deprecated_function() /var/www/wordpress/wp-admin/includes/deprecated.php:1226
+[26-Nov-2018 13:17:39 UTC] PHP   9. trigger_error() /var/www/wordpress/wp-includes/functions.php:3856
+[26-Nov-2018 13:17:39 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/wordpress/wp-includes/functions.php on line 3856
+[26-Nov-2018 13:17:39 UTC] PHP Stack trace:
+[26-Nov-2018 13:17:39 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:17:39 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:17:39 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:17:39 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:17:39 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:17:39 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:17:39 UTC] PHP   7. screen_icon() /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php:173
+[26-Nov-2018 13:17:39 UTC] PHP   8. get_screen_icon() /var/www/wordpress/wp-admin/includes/deprecated.php:1227
+[26-Nov-2018 13:17:39 UTC] PHP   9. _deprecated_function() /var/www/wordpress/wp-admin/includes/deprecated.php:1239
+[26-Nov-2018 13:17:39 UTC] PHP  10. trigger_error() /var/www/wordpress/wp-includes/functions.php:3856
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:17 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:18:17 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:17 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:17 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:17 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:17 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:17 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:17 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:18 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/wordpress/wp-includes/functions.php on line 3856
+[26-Nov-2018 13:18:18 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:18 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:18 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:18 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:18 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:18 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:18 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:18 UTC] PHP   7. screen_icon() /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php:173
+[26-Nov-2018 13:18:18 UTC] PHP   8. _deprecated_function() /var/www/wordpress/wp-admin/includes/deprecated.php:1226
+[26-Nov-2018 13:18:18 UTC] PHP   9. trigger_error() /var/www/wordpress/wp-includes/functions.php:3856
+[26-Nov-2018 13:18:18 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/wordpress/wp-includes/functions.php on line 3856
+[26-Nov-2018 13:18:18 UTC] PHP Stack trace:
+[26-Nov-2018 13:18:18 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:18:18 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:18:18 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:18:18 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:18:18 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:18:18 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:18:18 UTC] PHP   7. screen_icon() /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php:173
+[26-Nov-2018 13:18:18 UTC] PHP   8. get_screen_icon() /var/www/wordpress/wp-admin/includes/deprecated.php:1227
+[26-Nov-2018 13:18:18 UTC] PHP   9. _deprecated_function() /var/www/wordpress/wp-admin/includes/deprecated.php:1239
+[26-Nov-2018 13:18:18 UTC] PHP  10. trigger_error() /var/www/wordpress/wp-includes/functions.php:3856
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  Undefined index: custom_resources in /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php on line 104
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/wordpress/wp-includes/functions.php on line 3856
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP   7. screen_icon() /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php:173
+[26-Nov-2018 13:19:50 UTC] PHP   8. _deprecated_function() /var/www/wordpress/wp-admin/includes/deprecated.php:1226
+[26-Nov-2018 13:19:50 UTC] PHP   9. trigger_error() /var/www/wordpress/wp-includes/functions.php:3856
+[26-Nov-2018 13:19:50 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/wordpress/wp-includes/functions.php on line 3856
+[26-Nov-2018 13:19:50 UTC] PHP Stack trace:
+[26-Nov-2018 13:19:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[26-Nov-2018 13:19:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[26-Nov-2018 13:19:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[26-Nov-2018 13:19:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[26-Nov-2018 13:19:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 13:19:50 UTC] PHP   6. amcharts_settings_show() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 13:19:50 UTC] PHP   7. screen_icon() /var/www/wordpress/wp-content/plugins/amcharts-charts-and-maps/includes/settings.php:173
+[26-Nov-2018 13:19:50 UTC] PHP   8. get_screen_icon() /var/www/wordpress/wp-admin/includes/deprecated.php:1227
+[26-Nov-2018 13:19:50 UTC] PHP   9. _deprecated_function() /var/www/wordpress/wp-admin/includes/deprecated.php:1239
+[26-Nov-2018 13:19:50 UTC] PHP  10. trigger_error() /var/www/wordpress/wp-includes/functions.php:3856
+[26-Nov-2018 13:56:26 UTC] PHP Warning:  require(/var/www/wordpress/wp-content/plugins/autoptimize/classes/autoptimizeMain.php): failed to open stream: No such file or directory in /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php on line 71
+[26-Nov-2018 13:56:26 UTC] PHP Stack trace:
+[26-Nov-2018 13:56:26 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:56:26 UTC] PHP   2. activate_plugin() /var/www/wordpress/wp-admin/plugins.php:43
+[26-Nov-2018 13:56:26 UTC] PHP   3. include_once() /var/www/wordpress/wp-admin/includes/plugin.php:555
+[26-Nov-2018 13:56:26 UTC] PHP   4. autoptimize() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:96
+[26-Nov-2018 13:56:26 UTC] PHP   5. spl_autoload_call() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:26 UTC] PHP   6. autoptimize_autoload() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:26 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/wordpress/wp-content/plugins/autoptimize/classes/autoptimizeMain.php' (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php on line 71
+[26-Nov-2018 13:56:26 UTC] PHP Stack trace:
+[26-Nov-2018 13:56:26 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:56:26 UTC] PHP   2. activate_plugin() /var/www/wordpress/wp-admin/plugins.php:43
+[26-Nov-2018 13:56:26 UTC] PHP   3. include_once() /var/www/wordpress/wp-admin/includes/plugin.php:555
+[26-Nov-2018 13:56:26 UTC] PHP   4. autoptimize() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:96
+[26-Nov-2018 13:56:26 UTC] PHP   5. spl_autoload_call() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:26 UTC] PHP   6. autoptimize_autoload() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:27 UTC] PHP Warning:  require(/var/www/wordpress/wp-content/plugins/autoptimize/classes/autoptimizeMain.php): failed to open stream: No such file or directory in /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php on line 71
+[26-Nov-2018 13:56:27 UTC] PHP Stack trace:
+[26-Nov-2018 13:56:27 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:56:27 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:178
+[26-Nov-2018 13:56:27 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[26-Nov-2018 13:56:27 UTC] PHP   4. autoptimize() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:96
+[26-Nov-2018 13:56:27 UTC] PHP   5. spl_autoload_call() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:27 UTC] PHP   6. autoptimize_autoload() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:27 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/wordpress/wp-content/plugins/autoptimize/classes/autoptimizeMain.php' (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php on line 71
+[26-Nov-2018 13:56:27 UTC] PHP Stack trace:
+[26-Nov-2018 13:56:27 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:56:27 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:178
+[26-Nov-2018 13:56:27 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[26-Nov-2018 13:56:27 UTC] PHP   4. autoptimize() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:96
+[26-Nov-2018 13:56:27 UTC] PHP   5. spl_autoload_call() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:27 UTC] PHP   6. autoptimize_autoload() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:27 UTC] PHP Warning:  require(/var/www/wordpress/wp-content/plugins/autoptimize/classes/autoptimizeMain.php): failed to open stream: No such file or directory in /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php on line 71
+[26-Nov-2018 13:56:27 UTC] PHP Stack trace:
+[26-Nov-2018 13:56:27 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:56:27 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:178
+[26-Nov-2018 13:56:27 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[26-Nov-2018 13:56:27 UTC] PHP   4. autoptimize() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:96
+[26-Nov-2018 13:56:27 UTC] PHP   5. spl_autoload_call() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:27 UTC] PHP   6. autoptimize_autoload() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:27 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/wordpress/wp-content/plugins/autoptimize/classes/autoptimizeMain.php' (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php on line 71
+[26-Nov-2018 13:56:27 UTC] PHP Stack trace:
+[26-Nov-2018 13:56:27 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[26-Nov-2018 13:56:27 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:178
+[26-Nov-2018 13:56:27 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[26-Nov-2018 13:56:27 UTC] PHP   4. autoptimize() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:96
+[26-Nov-2018 13:56:27 UTC] PHP   5. spl_autoload_call() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 13:56:27 UTC] PHP   6. autoptimize_autoload() /var/www/wordpress/wp-content/plugins/autoptimize/autoptimize.php:90
+[26-Nov-2018 23:29:49 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 155
+[26-Nov-2018 23:29:49 UTC] PHP Stack trace:
+[26-Nov-2018 23:29:49 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[26-Nov-2018 23:29:49 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[26-Nov-2018 23:29:49 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[26-Nov-2018 23:29:49 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 23:29:49 UTC] PHP   5. wp_version_check() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 23:29:49 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:155
+[26-Nov-2018 23:29:49 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 347
+[26-Nov-2018 23:29:49 UTC] PHP Stack trace:
+[26-Nov-2018 23:29:49 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[26-Nov-2018 23:29:49 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[26-Nov-2018 23:29:49 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[26-Nov-2018 23:29:49 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 23:29:49 UTC] PHP   5. wp_update_plugins() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 23:29:49 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:347
+[26-Nov-2018 23:29:49 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 529
+[26-Nov-2018 23:29:49 UTC] PHP Stack trace:
+[26-Nov-2018 23:29:49 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[26-Nov-2018 23:29:49 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[26-Nov-2018 23:29:49 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[26-Nov-2018 23:29:49 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[26-Nov-2018 23:29:49 UTC] PHP   5. wp_update_themes() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[26-Nov-2018 23:29:49 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:529
+[27-Nov-2018 11:02:34 UTC] PHP Warning:  include(): Filename cannot be empty in /var/www/wordpress/wp-content/themes/loop_theme/index.php on line 19
+[27-Nov-2018 11:02:34 UTC] PHP Stack trace:
+[27-Nov-2018 11:02:34 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[27-Nov-2018 11:02:34 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[27-Nov-2018 11:02:34 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[27-Nov-2018 11:02:34 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[27-Nov-2018 11:02:34 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/themes/loop_theme/index.php on line 19
+[27-Nov-2018 11:02:34 UTC] PHP Stack trace:
+[27-Nov-2018 11:02:34 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[27-Nov-2018 11:02:34 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[27-Nov-2018 11:02:34 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[27-Nov-2018 11:02:34 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[28-Nov-2018 12:24:22 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 155
+[28-Nov-2018 12:24:22 UTC] PHP Stack trace:
+[28-Nov-2018 12:24:22 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[28-Nov-2018 12:24:22 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[28-Nov-2018 12:24:22 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[28-Nov-2018 12:24:22 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[28-Nov-2018 12:24:22 UTC] PHP   5. wp_version_check() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[28-Nov-2018 12:24:22 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:155
+[28-Nov-2018 12:24:23 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 347
+[28-Nov-2018 12:24:23 UTC] PHP Stack trace:
+[28-Nov-2018 12:24:23 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[28-Nov-2018 12:24:23 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[28-Nov-2018 12:24:23 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[28-Nov-2018 12:24:23 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[28-Nov-2018 12:24:23 UTC] PHP   5. wp_update_plugins() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[28-Nov-2018 12:24:23 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:347
+[28-Nov-2018 12:24:23 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/wordpress/wp-includes/update.php on line 529
+[28-Nov-2018 12:24:23 UTC] PHP Stack trace:
+[28-Nov-2018 12:24:23 UTC] PHP   1. {main}() /var/www/wordpress/wp-cron.php:0
+[28-Nov-2018 12:24:23 UTC] PHP   2. do_action_ref_array() /var/www/wordpress/wp-cron.php:126
+[28-Nov-2018 12:24:23 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:515
+[28-Nov-2018 12:24:23 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[28-Nov-2018 12:24:23 UTC] PHP   5. wp_update_themes() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[28-Nov-2018 12:24:23 UTC] PHP   6. trigger_error() /var/www/wordpress/wp-includes/update.php:529
+[05-Dec-2018 00:18:47 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/wordpress/wp-includes/class-wp-post.php on line 347
+[05-Dec-2018 00:18:47 UTC] PHP Stack trace:
+[05-Dec-2018 00:18:47 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[05-Dec-2018 00:18:47 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[05-Dec-2018 00:18:47 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[05-Dec-2018 00:18:47 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[05-Dec-2018 00:18:47 UTC] PHP   5. the_content() /var/www/wordpress/wp-content/themes/loop_theme/template-parts/about-us.php:18
+[05-Dec-2018 00:18:47 UTC] PHP   6. get_the_content() /var/www/wordpress/wp-includes/post-template.php:231
+[05-Dec-2018 00:18:47 UTC] PHP   7. the_title_attribute() /var/www/wordpress/wp-includes/post-template.php:271
+[05-Dec-2018 00:18:47 UTC] PHP   8. get_the_title() /var/www/wordpress/wp-includes/post-template.php:82
+[05-Dec-2018 00:18:47 UTC] PHP   9. get_post() /var/www/wordpress/wp-includes/post-template.php:111
+[05-Dec-2018 00:18:47 UTC] PHP  10. WP_Post->filter() /var/www/wordpress/wp-includes/post.php:595
+[05-Dec-2018 00:33:32 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/wordpress/wp-includes/post.php on line 592
+[05-Dec-2018 00:33:32 UTC] PHP Stack trace:
+[05-Dec-2018 00:33:32 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[05-Dec-2018 00:33:32 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[05-Dec-2018 00:33:32 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[05-Dec-2018 00:33:32 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[05-Dec-2018 00:33:32 UTC] PHP   5. the_content() /var/www/wordpress/wp-content/themes/loop_theme/template-parts/about-us.php:18
+[05-Dec-2018 00:33:32 UTC] PHP   6. get_the_content() /var/www/wordpress/wp-includes/post-template.php:231
+[05-Dec-2018 00:33:32 UTC] PHP   7. post_password_required() /var/www/wordpress/wp-includes/post-template.php:281
+[05-Dec-2018 00:33:32 UTC] PHP   8. get_post() /var/www/wordpress/wp-includes/post-template.php:784
+[05-Dec-2018 01:57:13 UTC] PHP Notice:  Undefined variable: ilValue in /var/www/wordpress/wp-content/themes/loop_theme/template-parts/about-us.php on line 3
+[05-Dec-2018 01:57:13 UTC] PHP Stack trace:
+[05-Dec-2018 01:57:13 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[05-Dec-2018 01:57:13 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[05-Dec-2018 01:57:13 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[05-Dec-2018 01:57:13 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74

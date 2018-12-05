@@ -1,0 +1,36 @@
+.main-trades-to-date{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .content-holder{
+    text-align: center;
+    margin-bottom: 40px;
+    .title-holder{
+      font-family: $font-mont-b;
+      color: #D59638;
+      margin-bottom: 20px;
+    }
+    .caption-holder{
+      font-family: $font-mont-b;
+      margin-bottom: 25px;
+    }
+    .description-holder{
+      font-size: 14px;
+    }
+  }
+  .box-holder{
+    background-color: #F2F2F2;
+    text-align: center;
+    .box-item{
+      padding-top: 35px;
+      padding-bottom: 35px;
+      h2{
+        font-family: $font-mont-b;
+        color: #CF9737;
+      }
+      h6{
+        font-family: $font-mont-b;
+        margin-top: 5px;
+      }
+    }
+  }
+}

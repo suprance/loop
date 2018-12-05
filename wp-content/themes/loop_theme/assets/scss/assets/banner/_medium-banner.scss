@@ -1,0 +1,51 @@
+.main-banner{
+  .banner-medium{
+    .banner-image{
+      height: 300px;
+      @media (min-width: 1200px){
+        height: 535px;
+      }
+    }
+    .banner-content{
+      height: 300px;
+      @media (min-width: 1200px){
+        height: 535px;
+      }
+      .cm{
+        width: 99.6%;
+        position: relative;
+        .content-holder{
+          position: absolute;
+          top: -140px;
+          left: 50%;
+          margin-left: -134px;
+          .button-holder{
+            margin-top: 15px;
+            a{
+              background-color: #171516;
+              cursor: pointer;
+              border-radius: 10px;
+              padding: 10px 41px;
+              border-color: #171516;
+              @include transition();
+              &:hover{
+                background-color: #ce9336;
+                border-radius: 10px;
+                border-color: #ce9336;
+                color: #fff;
+              }
+              &.active{
+                background-color: #ce9336;
+                // &:hover{
+                //   color: #fff;
+                //   background-color: #171516;
+                //   border-color: #171516;
+                // }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

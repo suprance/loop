@@ -1,0 +1,51 @@
+.main-packages{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 650px;
+  position: relative;
+  top: -290px;
+  .box-holder{
+    border: 1px solid #DFDFDF;
+    margin-bottom: 15px;
+    background-color: #fff;
+    .box-item{
+      .header-holder{
+        text-align: center;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 25px 50px 0 50px;
+        .title-holder{
+          font-family: $font-mont-b;
+          color: #d59638;
+          margin-bottom: 20px;
+        }
+        .money-range-holder{
+          font-family: $font-mont-b;
+          margin-bottom: 20px;
+        }
+      }
+      .content-title-holder{
+        padding: 30px 50px 0;
+        p{
+          font-family: $font-mont-sb;
+        }
+        .button-holder{
+          margin-top: 25px;
+          text-align: center;
+          a{
+            font-family: $font-mont-b;
+            font-size: 14px;
+            color: #cf9737;
+            padding: 10px 35px;
+            border: 1px solid #cf9737;
+            margin-bottom: 25px;
+            @include transition();
+            &:hover{
+              color: #fff;
+              background-color: #CF9737;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
-jQuery(document).ready(function($){
+jQuery(document).ready(function(){
   $(window).load(function(){
     // VARIABLES
     var $pageHeight = $(window).height(),
     $pageWidth = $(window).width();
+    navMenu();
+    countingNumber();
 
     // INITIATIONS
     AOS.init({ once: true });
@@ -22,6 +24,42 @@ jQuery(document).ready(function($){
 });
 
 // FUNCTION LISTS
+function countingNumber(){
+  $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 1000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now));
+      }
+    });
+  });
+}
+
+function navMenu(){
+  // If a link has a dropdown, add sub menu toggle.
+  $('nav ul li a:not(:only-child)').click(function(e) {
+    $(this).siblings('.nav-dropdown .sub-menu').toggle();
+    // Close one dropdown when selecting another
+    $('.nav-dropdown .sub-menu').not($(this).siblings()).hide();
+    e.stopPropagation();
+  });
+  // Clicking away from dropdown will remove the dropdown class
+  $('html').click(function() {
+    $('.nav-dropdown .sub-menu').hide();
+  });
+  // Toggle open and close nav styles on click
+  $('#nav-toggle').click(function() {
+    $('nav ul').slideToggle();
+  });
+  // Hamburger to X toggle
+  $('#nav-toggle').on('click', function() {
+    this.classList.toggle('active');
+  });
+};
+
 /*
 * Method smooth scrolls to given anchor point
 */
@@ -31,45 +69,11 @@ function smoothScrollTo(anchor) {
   $("html, body").animate({
     "scrollTop" : targetY
   }, duration, 'easeInOutCubic');
-}
+};
 
-function mobileLayout(){
-  // MOBILE MENU
-  if(!$('.sidepanel').hasClass('sidepanel-out')){
-    $('.close-sidemenu').hide();
-  }
-  $('.mobile-menu-btn').click(function(){
-    $('.sidepanel').toggleClass("sidepanel-out" , 1000);
-    $(this).toggleClass('toggle-mobile-menu', 1000);
-    if(!$('.sidepanel').hasClass('sidepanel-out')){
-      $('.close-sidemenu').hide();
-    } else {
-      $('.close-sidemenu').show();
-    }
-  });
-  $('.close-sidemenu').click(function(){
-    $('.sidepanel').toggleClass("sidepanel-out", 1000);
-    $(this).hide();
-  });
-
-  // MOBILE LAYOUT - PARENT CONTAINER
-  $('.sidepanel .parent-nav-1 > li > .sub-menu, .desktop-menu .parent-nav-1 > li > .sub-menu').addClass('level1');
-  $('.sidepanel .parent-nav-1 .level1 > li > .sub-menu, .desktop-menu .parent-nav-1 .level1 > li > .sub-menu').addClass('level2');
-  $('.sidepanel .parent-nav-1 .level2 > li > .sub-menu, .desktop-menu .parent-nav-1 .level2 > li > .sub-menu').addClass('level3');
-
-  // MOBILE LAYOUT - CHILD LEVEL 1
-  for (var i = 0; i < 3; i++) {
-    $('.sidepanel .parent-nav-1 .level'+i+' > li, .desktop-menu .parent-nav-1 .level'+i+' > li').each(function(e){
-      var current1 = $(this);
-      if( current1.hasClass('menu-item-has-children') ){
-        current1.find('> a').addClass('level'+i+'-title level-title-child column-middle');
-        $('<span class="icm-right level-controls level'+i+'-control column-middle"></span>').insertAfter( current1.find('> a') );
-      }
-    });
-  }
-
+function backToTop(){
   // BACK TO TOP
-  $('.back-to-top').hide(); // HIDE ON FIRST LOAD
+  // $('.back-to-top').hide(); // HIDE ON FIRST LOAD
   $(window).scroll(function () {
     var windowHeight = $(window).height() * 3;
     if ($(this).scrollTop() > windowHeight) {
@@ -84,6 +88,4 @@ function mobileLayout(){
     }, 800);
     return false;
   });
-}
-
-// CUSTOM FUNCTIONS STARTS HERE
+};

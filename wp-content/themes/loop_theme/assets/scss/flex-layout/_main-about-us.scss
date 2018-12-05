@@ -1,0 +1,53 @@
+.main-about-us{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .content-holder{
+    height: 300px;
+    .title-holder{
+      font-family: $font-mont-b;
+      color: #D59638;
+      margin-bottom: 20px;
+    }
+    .caption-holder{
+      font-family: $font-mont-b;
+    }
+    .description-holder{
+      position: relative;
+      height: 225px;
+      .floating-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 560px;
+        background-color: #fff;
+        z-index: 1;
+        padding: 25px 25px 20px 0;
+        p{
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+    }
+    .button-holder{
+      a{
+        font-family: $font-mont-b;
+        font-size: 12px;
+        color: #CF9737;
+        padding: 15px 30px;
+        border: 1px solid #CF9737;
+        margin-top: 15px;
+        @include transition();
+        &:hover{
+          color: #fff;
+          background-color: #CF9737;
+        }
+      }
+    }
+  }
+  .image-holder{
+    .image-item{
+      height: 360px;
+      @include backgroundDefault();
+    }
+  }
+}

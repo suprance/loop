@@ -1,0 +1,62 @@
+$black-trans: rgba(0, 0, 0, 0.5);
+
+.main-banner{
+  .banner-inner{
+    position: relative;
+    .banner-image{
+      @include backgroundDefault();
+    }
+    .banner-content{
+      padding: 0;
+      background-color: rgba(74,74,74,.25);
+      text-align: left;
+      height: 312px;
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      .cm{
+        width: 99.7%;
+        display: inline-block;
+        vertical-align: middle;
+        .content-holder{
+          text-align: center;
+          h1{
+            font-family: $font-mont-b;
+            color: #fff;
+            text-transform: uppercase;
+          }
+          h3{
+            font-family: $font-mont-b;
+            color: #CF9737;
+            margin-bottom: 40px;
+          }
+          .button-holder{
+            a{
+              font-family: $font-mont-b;
+              font-size: 12px;
+              color: #fff;
+              background-color: $black-trans;
+              padding: 15px 30px;
+              border: 1px solid #CF9737;
+              margin-right: 30px;
+              &:hover{
+                @include transition();
+                background-color: #CF9737;
+                border-color: $black-trans;
+              }
+            }
+          }
+        }
+        &.sh{
+          width: .01%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@import 'banner/banner';

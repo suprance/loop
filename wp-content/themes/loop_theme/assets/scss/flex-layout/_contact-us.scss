@@ -1,0 +1,152 @@
+.main-contact-us{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .contact-holder{
+    .wpcf7{
+      form{
+        &.wpcf7-form{
+          .contact-form{
+            .contact-form-group{
+              span{
+                display: block;
+                .wpcf7-form-control{
+                  width: 100%;
+                }
+              }
+              &.paired{
+                @include flexDisplay();
+                margin-left: -15px;
+                margin-right: -15px;
+                .cfg{
+                  width: 50%;
+                  padding: 0 15px;
+                }
+              }
+              label{
+                display: inline-block;
+                margin-bottom: .5rem;
+              }
+              & + .contact-form-group{
+                margin-top: 30px;
+              }
+              &.submit{
+                .button-holder{
+                  position: relative;
+                  display: inline-block;
+                  .ajax-loader{
+                    position: absolute;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #c6924a;
+                    z-index: 9;
+                    width: 100%;
+                  }
+                  .btn{
+                    background-color: #CE9336;
+                    color: #fff;
+                    padding: 16px 40px 15px;
+                    line-height: .79;
+                    font-size: 14px;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    border: 1px solid #fff;
+                    font-family: $font-mont-b;
+                    @include transition();
+                    &:hover{
+                      color: #CE9336;
+                      border-color: #CE9336;
+                      background-color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .wpcf7-validation-errors{
+            border-color: #c6924a;
+          }
+        }
+      }
+    }
+  }
+  .content-holder{
+    .title-holder{
+      h2{
+        font-family: $font-mont-b;
+        color: #d59638;
+        margin-bottom: 12px;
+      }
+    }
+    .social-media-holder{
+      margin-top: 60px;
+      .social-media-container{
+        .media-holder{
+          a{
+            margin: 0 2px;
+            div{
+              width: 35px;
+              height: 35px;
+              border-radius: 50px;
+              background-color: #3C5B9C;
+              position: relative;
+              border: 1px solid #fff;
+              @include transition();
+              i{
+                font-size: 18px;
+                position: absolute;
+                color: #fff;
+                font-size: 15px;
+                top: 9px;
+                left: 50%;
+              }
+              &.fb{
+                &:hover{
+                  background-color: #fff;
+                  border: 1px solid #3C5B9C;
+                  i{
+                    color: #3C5B9C;
+                  }
+                }
+                i{
+                  margin-left: -4px;
+                }
+              }
+              &.twit{
+                background-color: #4FC1E1;
+                &:hover{
+                  background-color: #fff;
+                  border: 1px solid #4FC1E1;
+                  i{
+                    color: #4FC1E1;
+                  }
+                }
+                i{
+                  margin-left: -7px;
+                }
+              }
+              &.ints{
+                background-color: #C743B9;
+                &:hover{
+                  background-color: #fff;
+                  border: 1px solid #C743B9;
+                  i{
+                    color: #C743B9;
+                  }
+                }
+                i{
+                  margin-left: -6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

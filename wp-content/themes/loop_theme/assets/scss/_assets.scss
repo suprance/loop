@@ -76,11 +76,15 @@
 // VERTICAL ALIGN BUG
 .cm{
   @include oInline(middle);
-  width: 99.99%;
+  width: 99.7%;
   &.sh{
-    width: 0.01%;
+    width: 0.1%;
     height: 100%;
   }
 }
 
-@import "assets/css-loader-dual-ring";
+@import 'assets/loader/css-loader-dual-ring';
+@import 'assets/header';
+@import 'assets/banner';
+@import 'flex-layout/flex-layout';
+@import 'assets/footer';

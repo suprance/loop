@@ -3,6 +3,12 @@
   flex-wrap: wrap;
 }
 
+@mixin flexWidth($value: 100%){
+  -moz-flex: 0 0 $value;
+  -ms-flex: 0 0 $value;
+  flex: $value;
+}
+
 @mixin flexAlign($align: auto){
   // stretch, center, start, end
   -ms-align-self: $align;
@@ -22,7 +28,7 @@
   background-repeat: $repeat;
 }
 
-@mixin transition( $transition: 0.4s ) {
+@mixin transition( $transition: 0.6s ) {
   -webkit-transition: all $transition;
   -ms-transition: all $transition;
   -o-transition: all $transition;

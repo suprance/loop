@@ -1,0 +1,19 @@
+.main-banner{
+  .banner-small{
+    .banner-image{
+      height: 300px;
+      @media (min-width: 1200px){
+        height: 375px;
+      }
+    }
+    .banner-content{
+      height: 300px;
+      @media (min-width: 1200px){
+        height: 375px;
+      }
+      .cm{
+        width: 99.6%;
+      }
+    }
+  }
+}

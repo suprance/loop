@@ -1,0 +1,90 @@
+&.site-footer{
+  background-color: #222222;
+  color: #D2D2D2;
+  .footer-top{
+    padding-top: 40px;
+    .footer-1{
+      font-size: 12px;
+      .image-holder{
+        margin-bottom: 20px;
+        a{
+          img{
+            width: 110px;
+            height: auto;
+          }
+        }
+      }
+      .content-holder{
+        margin-bottom: 30px;
+        line-height: 25px;
+      }
+      .mail-to-holder{
+        a{
+          color: #fff;
+          @include transition();
+          i{
+            padding-right: 10px;
+          }
+          &:hover{
+            color: #CF9737;
+          }
+        }
+      }
+    }
+    .footer-2, .footer-3, .footer-4{
+      .title-holder{
+        margin-bottom: 10px;
+        color: #fff;
+        p{
+          font-size: 25px;
+        }
+      }
+      .footer-menu-holder{
+        padding-bottom: 10px;
+        .link-holder{
+          font-size: 12px;
+          div{
+            margin-bottom: 13px;
+            a{
+              color: #D2D2D2;
+              font-family: $font-mont-sb;
+              @include transition();
+              &:hover{
+                color: #CF9737;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-4{
+      text-align: center;
+      p{
+        margin-bottom: 10px;
+      }
+      .newsletter{
+        .input-group{
+          #emailForSave{
+            background-color: #2B2B2B;
+            border-color: #2B2B2B;
+            border-radius: 50px 0 0 50px;
+            font-size: 12px;
+            padding: 15px 20px;
+            font-family: $font-mont-sb;
+            color: #D2D2D2;
+          }
+          .input-group-btn{
+            #emailForSaveButton{
+              background-color: #2B2B2B;
+              border-color: #2B2B2B;
+              border-radius: 0 50px 50px 0;
+              font-size: 12px;
+              padding-right: 20px;
+              font-family: $font-mont-b;
+            }
+          }
+        }
+      }
+    }
+  }
+}
