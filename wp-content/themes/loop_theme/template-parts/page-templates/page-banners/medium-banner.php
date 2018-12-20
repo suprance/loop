@@ -10,9 +10,15 @@
                 <div class="title-holder">
                   <h1>PACKAGES</h1>
                 </div>
-                <div class="button-holder">
-                  <a href="#" class="btn-item active">LIVE</a>
-                  <a href="#" class="btn-item">DEMO</a>
+                <div id="page-package" class="button-holder">
+                  <!-- <a href="#" class="btn-item active">LIVE</a>
+                  <a href="#" class="btn-item">DEMO</a> -->
+                  <div class="can-toggle live-demo-button">
+                    <input id="d" type="checkbox">
+                    <label for="d">
+                      <div class="can-toggle__switch" data-checked="Live" data-unchecked="Demo"></div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>

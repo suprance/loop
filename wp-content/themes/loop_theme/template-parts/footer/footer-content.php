@@ -28,10 +28,10 @@
               <div class="link-holder">
                 <!-- <a href="#"></a> -->
                 <div><a href="/">Home</a></div>
-                <div><a href="#">About Us</a></div>
+                <div><a href="/about-us/">About Us</a></div>
                 <div><a href="/packages/">Packages</a></div>
-                <div><a href="#">Testimonials</a></div>
-                <div><a href="#">FAQs</a></div>
+                <div><a href="/testimonials/">Testimonials</a></div>
+                <div><a href="/faq/">FAQs</a></div>
                 <div><a href="/contact-us/">Contact Us</a></div>
               </div>
             </div>

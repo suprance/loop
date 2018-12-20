@@ -1,0 +1,108 @@
+.can-toggle {
+  position: relative;
+  *, *:before, *:after { box-sizing: border-box; }
+  //overflow: hidden;
+  input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 0; left: 0;
+    &[disabled] ~ label {
+      pointer-events: none;
+      .can-toggle__switch { opacity: 0.4; }
+    }
+    &:checked {
+      ~ label {
+        .can-toggle__switch {
+          &:before {
+            content: attr(data-unchecked);
+            left: 0;
+          }
+          &:after {
+            content: attr(data-checked);
+          }
+        }
+      }
+      &:focus, &:hover {
+        ~ label {
+        }
+      }
+    }
+  }
+  label {
+    user-select: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .can-toggle__switch {
+      position: relative;
+      &:before {
+        content: attr(data-checked);
+        position: absolute;
+        top: 0;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      &:after {
+        content: attr(data-unchecked);
+        position: absolute;
+        z-index: 5;
+        text-transform: uppercase;
+        text-align: center;
+        background: white;
+        transform: translate3d(0,0,0);
+      }
+    }
+    
+  }
+  // Default values for .can-toggle class
+  @include can-toggle-branding; 
+  @include can-toggle-appearance; 
+  // Or re-brand the toggle for different applications
+  &.live-demo-button {
+    @include can-toggle-branding (
+      #171516,  // Off state color
+      #ce9336,  // On state color
+      rgba(white, 0.6),  // Off state text color
+      ease-in-out  // Transition timing function
+    );
+  }
+}
+
+.page-packages{
+  .col-4{
+    margin-bottom: 15px;
+  }
+  .box-holder {
+    -webkit-perspective: 800;
+    width: 350px;
+    height: 420px;
+    position: relative;
+    .box-item {
+      width: 100%;
+      height: 100%;
+      -webkit-transform-style: preserve-3d;
+      -webkit-transition: 0.5s;
+      &.flipped {
+        -webkit-transform: rotatex(-180deg);
+      }
+      .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-backface-visibility: hidden ;
+        z-index: 2;
+      }
+      .demo {
+        position: absolute;
+        z-index: 1;
+        background: white;
+        color: #000;
+      }
+      .live {
+        -webkit-transform: rotatex(-180deg);
+        background: black;
+        color: #fff;
+      }
+    }
+  }
+}

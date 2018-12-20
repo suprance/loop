@@ -11,6 +11,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
+<?php include(locate_template('template-parts/header/notification.php')); ?>
 <?php include(locate_template('template-parts/header/navigation.php')); ?>
 
   <div id="content" class="site-content">

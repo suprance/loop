@@ -1,0 +1,37 @@
+.page-faq{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .accordion{
+    .card{
+      .card-header{
+        padding: 0;
+        button{
+          display: block;
+          width: 100%;
+          text-align: left;
+          font-family: $font-mont-b;
+          color: #CF9737;
+          padding: 1rem 1.35rem;
+          background-color: rgba(0,0,0,.06);
+          &.collapsed{
+            background-color: rgba(0,0,0,.03);
+          }
+          &:hover{
+            text-decoration: none;
+            background-color: rgba(0,0,0,.06);
+          }
+        }
+      }
+      .card-body{
+        padding: 2rem;
+        h5{
+          font-family: $font-mont-b;
+          color: #CF9737;
+        }
+        p{
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}

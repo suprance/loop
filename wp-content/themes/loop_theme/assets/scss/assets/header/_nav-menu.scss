@@ -1,20 +1,31 @@
 // Navigation Variables
-$content-width: 1000px;
+$content-width: 940px;
 $breakpoint: 992px;
-$nav-height: 70px;
-$nav-background: rgba(0, 0, 0, 0.7);
+$nav-height: 80px;
+$nav-background: rgba(0, 0, 0, 0.3);
+$nav-background-fix: rgba(0, 0, 0, 0.6);
 $nav-font-color: #ffffff;
-$link-hover-color: #CF9737;
+$link-hover-color: #cf9737;
+$color-gradient-default: top, #ffffff, #ffffff 45%, #000 70%, #000;
+$color-gradient-hover: top, #cf9737, #cf9737 45%, #000 70%, #000;
 
 // Outer navigation wrapper
 .navigation {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 9;
   width: 100%;
   height: $nav-height;
   background: $nav-background;
+  border-bottom: #4a4a4a solid 1px;
+  margin-top: 48px;
+  &.position-fix{
+    position: fixed;
+    animation: smoothScroll 1s forwards;
+    margin-top: 0;
+    background: $nav-background-fix;
+  }
 }
 
 // Logo and branding
@@ -33,13 +44,14 @@ $link-hover-color: #CF9737;
 
 // Container with no padding for navbar
 .nav-container {
-  max-width: $content-width;
-  position: relative;
+  // max-width: $content-width;
+  // position: relative;
 }
 
 // Navigation 
 nav {
-  float: right;
+  // float: right;
+  text-align: center;
   ul {
     list-style: none;
     margin: 0;
@@ -56,15 +68,37 @@ nav {
         text-decoration: none;
         @include transition();
         &:hover {
-          color: $link-hover-color;
+          background-image: -webkit-linear-gradient($color-gradient-hover);
+          background-image:    -moz-linear-gradient($color-gradient-hover);
+          background-image:     -ms-linear-gradient($color-gradient-hover);
+          background-image:      -o-linear-gradient($color-gradient-hover);
+          background-image:         linear-gradient($color-gradient-hover);
         }
         &:not(:only-child):after {
           padding-left: 4px;
           content: ' ▾';
         }
       } // Dropdown list
+      &.current-menu-item{
+        a{
+          background-image: -webkit-linear-gradient($color-gradient-hover);
+          background-image:    -moz-linear-gradient($color-gradient-hover);
+          background-image:     -ms-linear-gradient($color-gradient-hover);
+          background-image:      -o-linear-gradient($color-gradient-hover);
+          background-image:         linear-gradient($color-gradient-hover);
+        }
+      }
       a{
-        font-family: $font-mont-sb;
+        font-family: $font-mont-b;
+        font-size: 12px;
+        letter-spacing: 2px;
+        background-image: -webkit-linear-gradient($color-gradient-default);
+        background-image:    -moz-linear-gradient($color-gradient-default);
+        background-image:     -ms-linear-gradient($color-gradient-default);
+        background-image:      -o-linear-gradient($color-gradient-default);
+        background-image:         linear-gradient($color-gradient-default);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       ul li {
         min-width: 190px;
@@ -119,7 +153,6 @@ nav {
         }
         ul li a {
           padding-left: 30px;
-          font-family: $font-mont-sb;
         }
       }
     }
@@ -132,7 +165,7 @@ nav {
 }
 @media screen and (min-width: $breakpoint) {
   .nav-list {
-    display: block !important;
+    display: inline-block !important;
   }
 }
 #nav-toggle {
@@ -180,4 +213,13 @@ article {
   max-width: $content-width;
   margin: 0 auto;
   padding: 10px;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

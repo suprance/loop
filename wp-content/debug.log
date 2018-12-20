@@ -4694,3 +4694,83 @@ Stack trace:
 [05-Dec-2018 01:57:13 UTC] PHP   2. require() /var/www/wordpress/index.php:17
 [05-Dec-2018 01:57:13 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
 [05-Dec-2018 01:57:13 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:12 UTC] PHP Warning:  include(): Filename cannot be empty in /var/www/wordpress/wp-content/themes/loop_theme/header.php on line 17
+[19-Dec-2018 23:25:12 UTC] PHP Stack trace:
+[19-Dec-2018 23:25:12 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Dec-2018 23:25:12 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Dec-2018 23:25:12 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[19-Dec-2018 23:25:12 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:12 UTC] PHP   5. get_header() /var/www/wordpress/wp-content/themes/loop_theme/index.php:15
+[19-Dec-2018 23:25:12 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:41
+[19-Dec-2018 23:25:12 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[19-Dec-2018 23:25:12 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[19-Dec-2018 23:25:12 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/themes/loop_theme/header.php on line 17
+[19-Dec-2018 23:25:12 UTC] PHP Stack trace:
+[19-Dec-2018 23:25:12 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Dec-2018 23:25:12 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Dec-2018 23:25:12 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[19-Dec-2018 23:25:12 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:12 UTC] PHP   5. get_header() /var/www/wordpress/wp-content/themes/loop_theme/index.php:15
+[19-Dec-2018 23:25:12 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:41
+[19-Dec-2018 23:25:12 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[19-Dec-2018 23:25:12 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[19-Dec-2018 23:25:14 UTC] PHP Warning:  include(): Filename cannot be empty in /var/www/wordpress/wp-content/themes/loop_theme/header.php on line 17
+[19-Dec-2018 23:25:14 UTC] PHP Stack trace:
+[19-Dec-2018 23:25:14 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Dec-2018 23:25:14 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Dec-2018 23:25:14 UTC] PHP Warning:  include(): Filename cannot be empty in /var/www/wordpress/wp-content/themes/loop_theme/header.php on line 17
+[19-Dec-2018 23:25:14 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[19-Dec-2018 23:25:14 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:14 UTC] PHP Stack trace:
+[19-Dec-2018 23:25:14 UTC] PHP   5. get_header() /var/www/wordpress/wp-content/themes/loop_theme/404.php:10
+[19-Dec-2018 23:25:14 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Dec-2018 23:25:14 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:41
+[19-Dec-2018 23:25:14 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Dec-2018 23:25:14 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[19-Dec-2018 23:25:14 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[19-Dec-2018 23:25:14 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[19-Dec-2018 23:25:14 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/themes/loop_theme/header.php on line 17
+[19-Dec-2018 23:25:14 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:14 UTC] PHP Stack trace:
+[19-Dec-2018 23:25:14 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Dec-2018 23:25:14 UTC] PHP   5. get_header() /var/www/wordpress/wp-content/themes/loop_theme/404.php:10
+[19-Dec-2018 23:25:14 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Dec-2018 23:25:14 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:41
+[19-Dec-2018 23:25:14 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[19-Dec-2018 23:25:14 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[19-Dec-2018 23:25:14 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:14 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[19-Dec-2018 23:25:14 UTC] PHP   5. get_header() /var/www/wordpress/wp-content/themes/loop_theme/404.php:10
+[19-Dec-2018 23:25:14 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/themes/loop_theme/header.php on line 17
+[19-Dec-2018 23:25:14 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:41
+[19-Dec-2018 23:25:14 UTC] PHP Stack trace:
+[19-Dec-2018 23:25:14 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Dec-2018 23:25:14 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[19-Dec-2018 23:25:14 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[19-Dec-2018 23:25:14 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Dec-2018 23:25:14 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[19-Dec-2018 23:25:14 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:14 UTC] PHP   5. get_header() /var/www/wordpress/wp-content/themes/loop_theme/404.php:10
+[19-Dec-2018 23:25:14 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:41
+[19-Dec-2018 23:25:14 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[19-Dec-2018 23:25:14 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[19-Dec-2018 23:25:14 UTC] PHP Warning:  include(): Filename cannot be empty in /var/www/wordpress/wp-content/themes/loop_theme/header.php on line 17
+[19-Dec-2018 23:25:14 UTC] PHP Stack trace:
+[19-Dec-2018 23:25:14 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Dec-2018 23:25:14 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Dec-2018 23:25:14 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[19-Dec-2018 23:25:14 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:14 UTC] PHP   5. get_header() /var/www/wordpress/wp-content/themes/loop_theme/404.php:10
+[19-Dec-2018 23:25:14 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:41
+[19-Dec-2018 23:25:14 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[19-Dec-2018 23:25:14 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688
+[19-Dec-2018 23:25:14 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/themes/loop_theme/header.php on line 17
+[19-Dec-2018 23:25:14 UTC] PHP Stack trace:
+[19-Dec-2018 23:25:14 UTC] PHP   1. {main}() /var/www/wordpress/index.php:0
+[19-Dec-2018 23:25:14 UTC] PHP   2. require() /var/www/wordpress/index.php:17
+[19-Dec-2018 23:25:14 UTC] PHP   3. require_once() /var/www/wordpress/wp-blog-header.php:19
+[19-Dec-2018 23:25:14 UTC] PHP   4. include() /var/www/wordpress/wp-includes/template-loader.php:74
+[19-Dec-2018 23:25:14 UTC] PHP   5. get_header() /var/www/wordpress/wp-content/themes/loop_theme/404.php:10
+[19-Dec-2018 23:25:14 UTC] PHP   6. locate_template() /var/www/wordpress/wp-includes/general-template.php:41
+[19-Dec-2018 23:25:14 UTC] PHP   7. load_template() /var/www/wordpress/wp-includes/template.php:647
+[19-Dec-2018 23:25:14 UTC] PHP   8. require_once() /var/www/wordpress/wp-includes/template.php:688

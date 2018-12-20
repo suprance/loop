@@ -1,0 +1,12 @@
+.notification-holder{
+  padding: 15px 0;
+  background-color: #000;
+  .content-holder{
+    p{
+      font-family: $font-mont-sb;
+      color: $color-Gold;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  }
+}

@@ -15,10 +15,14 @@
         width: 99.6%;
         position: relative;
         .content-holder{
-          position: absolute;
-          top: -140px;
-          left: 50%;
-          margin-left: -134px;
+          // position: absolute;
+          // top: -140px;
+          // left: 50%;
+          // margin-left: -134px;
+          position: relative;
+          top: -110px;
+          left: 0;
+          margin-left: 0;
           .button-holder{
             margin-top: 15px;
             a{
@@ -42,6 +46,11 @@
                 //   border-color: #171516;
                 // }
               }
+            }
+            .live-demo-button{
+              left: 50%;
+              margin-left: -70px;
+              position: absolute;
             }
           }
         }

@@ -30,7 +30,7 @@ $black-trans: rgba(0, 0, 0, 0.5);
           }
           h3{
             font-family: $font-mont-b;
-            color: #CF9737;
+            color: $color-Gold;
             margin-bottom: 40px;
           }
           .button-holder{
@@ -40,11 +40,11 @@ $black-trans: rgba(0, 0, 0, 0.5);
               color: #fff;
               background-color: $black-trans;
               padding: 15px 30px;
-              border: 1px solid #CF9737;
+              border: 1px solid $color-Gold;
               margin-right: 30px;
               &:hover{
                 @include transition();
-                background-color: #CF9737;
+                background-color: $color-Gold;
                 border-color: $black-trans;
               }
             }
